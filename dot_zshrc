@@ -9,6 +9,10 @@ source ~/.zshrc.secrets
 source ~/.zshrc.aliases
 source /usr/local/share/antigen/antigen.zsh
 
+# Brew
+export HOMEBREW_BUNDLE_FILE="$HOME/.brewfile"
+export HOMEBREW_BUNDLE_NO_LOCK=true
+
 # Antigen
 antigen use oh-my-zsh
 antigen bundle zsh-users/zsh-completions

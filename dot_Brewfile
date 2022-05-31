@@ -1,0 +1,43 @@
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+
+
+brew "git"
+brew "gnupg"
+brew "pinentry"
+brew "antigen"
+
+cask "font-meslo-lg-nerd-font"
+
+cask "qlmarkdown"
+cask "qlstephen"
+cask "quicklook-csv"
+cask "quicklook-json"
+
+cask 'lulu'
+cask 'oversight'
+
+cask "google-chrome"
+cask "brave-browser"
+cask "microsoft-edge"
+cask "opera"
+cask "safari-technology-preview"
+
+cask "authy"
+cask "bitwarden"
+cask "dozer"
+cask "imageoptim"
+cask "figma"
+cask "slack"
+cask "home-assistant"
+cask "synology-drive"
+cask "logitech-options"
+cask "nordvpn"
+cask "visual-studio-code"
+
+cask "discord"
+cask "corsair-icue"
+cask "calibre"
+cask "iina"
+cask "spotify"
+cask "tidal"
