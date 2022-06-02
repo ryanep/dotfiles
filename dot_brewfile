@@ -1,7 +1,6 @@
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 
-
 brew "git"
 brew "gnupg"
 brew "pinentry"
