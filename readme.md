@@ -18,3 +18,11 @@ Dotfiles is my personal machine configuration, currently supporting macOS. The d
 - asdf
 - GPG
 - Homebrew
+
+## Installation
+
+To setup the dotfiles, run:
+
+```sh
+curl -L https://www.ryanep.com/install.sh | sh
+```
