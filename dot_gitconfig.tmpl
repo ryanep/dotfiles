@@ -1,0 +1,12 @@
+[user]
+	name = {{ .fullname }}
+	email = {{ .emailaddress }}
+  	signingkey = {{ .signingkey }}
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
+[core]
+	excludesfile = ~/.gitignore
