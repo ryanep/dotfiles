@@ -5,6 +5,7 @@ brew "git"
 brew "gnupg"
 brew "pinentry"
 brew "antigen"
+brew "podman"
 
 cask "font-meslo-lg-nerd-font"
 
