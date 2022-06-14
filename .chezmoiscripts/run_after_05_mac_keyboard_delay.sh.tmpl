@@ -1,0 +1,15 @@
+#!/bin/sh
+
+{{ if eq .chezmoi.os "darwin" -}}
+
+echo Setting macOS key repeat config.
+
+defaults write -g ApplePressAndHoldEnabled -bool false
+defaults write -g InitialKeyRepeat -int 10 # Default: 15 (225 ms)
+defaults write -g KeyRepeat -int 1 # Default: 2 (30 ms)
+
+{{ else }}
+
+echo Skipping macOS key repeat config.
+
+{{ end -}}
