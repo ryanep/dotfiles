@@ -1,23 +1,21 @@
 #!/bin/sh
 
-set -e # -e: exit on error
+set -e
 
 if [ ! "$(command -v brew)" ]; then
-	# No chezmoi installation found.
-	echo No homebrew found. Installing...
+	echo No homebrew installation found. Installing...
+	
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
-	# Brew installed.
-	echo Homebrew installed. Skipping.
+	echo Homebrew already installed. Skipping.
 fi
 
 if [ ! "$(command -v chezmoi)" ]; then
-	# No chezmoi installation found.
-	echo No chezmoi found. Installing...
+	echo No chezmoi installation found. Installing...
+
 	brew install chezmoi
 else
-	# chezmoi installed.
-	echo Chezmoi installed. Skipping.
+	echo Chezmoi already installed. Skipping.
 fi
 
-chezmoi init --apply
+chezmoi init --apply https://github.com/ryanep/dotfiles.git
