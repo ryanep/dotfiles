@@ -10,16 +10,13 @@ brew "podman"
 cask "font-meslo-lg-nerd-font"
 
 cask "qlmarkdown"
-cask "qlstephen"
 cask "quicklook-csv"
 cask "quicklook-json"
 
 cask 'lulu'
 cask 'oversight'
 
-cask "google-chrome"
 cask "brave-browser"
-cask "microsoft-edge"
 cask "opera"
 cask "safari-technology-preview"
 
