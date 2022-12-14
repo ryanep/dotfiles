@@ -1,10 +1,10 @@
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 
+brew "antigen"
 brew "git"
 brew "gnupg"
 brew "pinentry"
-brew "antigen"
 brew "podman"
 
 cask "font-meslo-lg-nerd-font"
@@ -24,17 +24,21 @@ cask "authy"
 cask "bitwarden"
 cask "dozer"
 cask "imageoptim"
-cask "figma"
-cask "slack"
-cask "home-assistant"
-cask "synology-drive"
 cask "logitech-options"
-cask "nordvpn"
+cask "slack"
+cask "tidal"
 cask "visual-studio-code"
 
-cask "discord"
-cask "corsair-icue"
+{{ if eq .profile "home" -}}
+
 cask "calibre"
+cask "corsair-icue"
+cask "discord"
+cask "figma"
+cask "home-assistant"
 cask "iina"
+cask "nordvpn"
 cask "spotify"
-cask "tidal"
+cask "synology-drive"
+
+{{ end -}}

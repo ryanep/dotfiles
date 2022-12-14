@@ -1,8 +1,10 @@
 {{- $fullName := promptString "Full name" -}}
 {{- $emailAddress := promptString "Email address" -}}
 {{- $signingKey := promptString "Signing key" -}}
+{{- $profile := promptString "Profile (home, work)" -}}
 
 [data]
 	fullname = {{ $fullName | quote }}
 	emailaddress = {{ $emailAddress | quote }}
 	signingkey = {{ $signingKey | quote }}
+	profile = {{ $profile | quote }}
