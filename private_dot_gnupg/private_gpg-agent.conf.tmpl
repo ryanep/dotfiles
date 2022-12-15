@@ -1,3 +1,14 @@
+
 {{ if eq .chezmoi.os "darwin" -}}
-pinentry-program /usr/local/bin/pinentry-mac
+
+	{# $(brew --prefix) in path does not work. Pinentry path must be static. #}
+
+	{{ if eq .chezmoi.arch "amd64" }}
+	pinentry-program /usr/local/bin/pinentry-mac
+	{{ end -}}
+
+	{{ if eq .chezmoi.arch "arm" }}
+	pinentry-program /opt/homebrew/bin/pinentry-mac
+	{{ end -}}
+
 {{ end -}}
