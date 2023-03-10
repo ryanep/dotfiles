@@ -1,14 +1,17 @@
 [user]
-	name = {{ .fullname }}
-	email = {{ .emailaddress }}
-  	signingkey = {{ .signingkey }}
+  name = {{ .fullname }}
+  email = {{ .emailaddress }}
+  signingkey = {{ .signingkey }}
 [init]
-	defaultBranch = main
+  defaultBranch = main
+[pull]
+  rebase = true
 [push]
   default = current
+  autoSetupRemote = true
 [commit]
-	gpgsign = true
+  gpgsign = true
 [gpg]
-	program = gpg
+  program = gpg
 [core]
-	excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
