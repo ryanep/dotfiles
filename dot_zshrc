@@ -12,6 +12,7 @@ source $(brew --prefix)/share/antigen/antigen.zsh
 # Brew
 export HOMEBREW_BUNDLE_FILE="$HOME/.brewfile"
 export HOMEBREW_BUNDLE_NO_LOCK=true
+export HOMEBREW_NO_ANALYTICS=1
 
 # Antigen
 antigen use oh-my-zsh
