@@ -1,4 +1,4 @@
-nodejs 18.12.1
+nodejs 20.5.1
 yarn 1.22.19
 terraform 1.2.2
 terragrunt 0.37.1
