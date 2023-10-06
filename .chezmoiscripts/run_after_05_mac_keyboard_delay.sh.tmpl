@@ -10,8 +10,9 @@ defaults write -g InitialKeyRepeat -int 10 # Default: 15 (225 ms)
 defaults write -g KeyRepeat -int 1 # Default: 2 (30 ms)
 
 # Dock
-defaults write com.apple.Dock orientation -string left
+defaults write com.apple.dock orientation -string left
 defaults write com.apple.dock tilesize -integer 52
+defaults write com.apple.dock show-recents -bool FALSE
 
 # Launchpad
 defaults write com.apple.dock springboard-rows -int 8
