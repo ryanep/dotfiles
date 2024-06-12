@@ -23,5 +23,5 @@ Dotfiles is a personal machine configuration, currently supporting macOS. The do
 To setup the dotfiles, run:
 
 ```sh
-curl -L https://ryanep.dev/install.sh | sh
+curl -L https://cdn.ryanep.com/install.sh | sh
 ```
