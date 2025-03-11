@@ -9,7 +9,7 @@ source ~/.zshrc.secrets
 source ~/.zshrc.aliases
 source $(brew --prefix)/share/antigen/antigen.zsh
 
-# Brew
+# Homebrew
 export HOMEBREW_BUNDLE_FILE="$HOME/.brewfile"
 export HOMEBREW_BUNDLE_NO_LOCK=true
 export HOMEBREW_NO_ANALYTICS=1
@@ -22,6 +22,7 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen theme romkatv/powerlevel10k
 antigen apply
 
+# Asdf
 . $(brew --prefix)/opt/asdf/libexec/asdf.sh
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
