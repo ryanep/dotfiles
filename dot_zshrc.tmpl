@@ -5,6 +5,12 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+{{ if eq .chezmoi.os "linux" -}}
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+{{ end -}}
+
 source $(brew --prefix)/share/antigen/antigen.zsh
 
 # Homebrew
