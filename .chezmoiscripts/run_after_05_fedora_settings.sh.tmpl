@@ -1,0 +1,14 @@
+#!/bin/sh
+
+{{ if eq .chezmoi.os "darwin" -}}
+
+echo Updating Fedora configuration.
+
+gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 20
+
+{{ else }}
+
+echo Skipping Fedora configuration.
+
+{{ end -}}
+

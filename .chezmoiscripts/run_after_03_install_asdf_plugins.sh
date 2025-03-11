@@ -7,6 +7,3 @@ asdf_plugin_add() {
 }
 
 asdf_plugin_add nodejs
-asdf_plugin_add yarn
-asdf_plugin_add terraform
-asdf_plugin_add terragrunt

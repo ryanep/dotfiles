@@ -2,7 +2,7 @@
 
 {{ if eq .chezmoi.os "darwin" -}}
 
-echo Setting macOS settings.
+echo Updating macOS configuration.
 
 # Key press
 defaults write -g ApplePressAndHoldEnabled -bool false
@@ -25,6 +25,6 @@ killall Dock
 
 {{ else }}
 
-echo Skipping macOS key repeat config.
+echo Skipping macOS configuration.
 
 {{ end -}}
