@@ -6,7 +6,7 @@
 
 ## Introduction
 
-Dotfiles is a personal machine configuration, currently supporting macOS. The dotfiles are managed by the Chezmoi dotfiles manager.
+Dotfiles is a personal machine configuration, currently supporting macOS and Fedora. The dotfiles are managed by the Chezmoi dotfiles manager.
 
 ## Features
 
